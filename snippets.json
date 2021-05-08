@@ -122,7 +122,7 @@
 			"$0"
 		],
 		"description": "Println function."
-	}
+	},
 	// Variables and Arrays
 	"int": {
 		"prefix": [
