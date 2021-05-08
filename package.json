@@ -5,7 +5,7 @@
 	"version": "1.0.1",
 	"publisher": "EliasBall",
 	"repository": "https://github.com/blue1stone/vs-code-c0-snippets",
-	"icon": "./icon.png",
+	"icon": "icon.png",
 	"galleryBanner.color": "#000000",
 	"engines": {
 		"vscode": "^1.55.2"
