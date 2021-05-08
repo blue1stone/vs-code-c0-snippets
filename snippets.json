@@ -93,6 +93,36 @@
 		],
 		"description": "A generic function."
 	},
+	"printchar Function":{
+		"prefix": [
+			"printchar"
+		],
+		"body": [
+			"printchar('$1');",
+			"$0"
+		],
+		"description": "Printchar function."
+	},
+	"printint Function":{
+		"prefix": [
+			"printint"
+		],
+		"body": [
+			"printchar($1);",
+			"$0"
+		],
+		"description": "Printint function."
+	},
+	"println Function":{
+		"prefix": [
+			"println"
+		],
+		"body": [
+			"printchar($1);",
+			"$0"
+		],
+		"description": "Println function."
+	}
 	// Variables and Arrays
 	"int": {
 		"prefix": [
