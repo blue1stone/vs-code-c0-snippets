@@ -13,11 +13,18 @@
 	"categories": [
 		"Snippets"
 	],
-	"languages": [{
-        "id": "c0",
-        "extensions": [ ".c0"],
-        "aliases": [ "C0", "c0" ]
-    }],
+	"languages": [
+		{
+			"id": "c0",
+			"extensions": [
+				".c0"
+			],
+			"aliases": [
+				"C0",
+				"c0"
+			]
+		}
+	],
 	"contributes": {
 		"snippets": [
 			{
@@ -27,7 +34,7 @@
 		]
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.56.0",
+		"@types/vscode": "^1.39.0",
 		"typescript": "^4.2.4"
 	}
 }
