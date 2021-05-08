@@ -2,39 +2,34 @@
 	"name": "c0-snippets",
 	"displayName": "C0 Snippets",
 	"description": "C0 Autocomplete Snippets",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"publisher": "EliasBall",
 	"repository": "https://github.com/blue1stone/vs-code-c0-snippets",
 	"icon": "icon.png",
-	"galleryBanner.color": "#000000",
 	"engines": {
 		"vscode": "^1.55.2"
 	},
 	"categories": [
 		"Snippets"
 	],
-	"languages": [
-		{
-			"id": "c0",
-			"extensions": [
-				".c0"
-			],
-			"aliases": [
-				"C0",
-				"c0"
-			]
-		}
-	],
 	"contributes": {
+		"languages": [
+			{
+				"id": "C0",
+				"extensions": [
+					".c0"
+				],
+				"aliases": [
+					"c0",
+					"C0"
+				]
+			}
+		],
 		"snippets": [
 			{
-				"language": "c0",
+				"language": "C0",
 				"path": "./snippets.json"
 			}
 		]
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.39.0",
-		"typescript": "^4.2.4"
 	}
 }
