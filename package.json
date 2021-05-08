@@ -2,7 +2,7 @@
 	"name": "c0-snippets",
 	"displayName": "C0 Snippets",
 	"description": "C0 Autocomplete Snippets",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"publisher": "EliasBall",
 	"repository": "https://github.com/blue1stone/vs-code-c0-snippets",
 	"icon": "icon.png",
@@ -20,8 +20,8 @@
 					".c0"
 				],
 				"aliases": [
-					"c0",
-					"C0"
+					"C0",
+					"c0"
 				]
 			}
 		],
