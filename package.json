@@ -13,6 +13,11 @@
 	"categories": [
 		"Snippets"
 	],
+	"languages": [{
+        "id": "c0",
+        "extensions": [ ".c0"],
+        "aliases": [ "C0", "c0" ]
+    }],
 	"contributes": {
 		"snippets": [
 			{
@@ -20,5 +25,9 @@
 				"path": "./snippets.json"
 			}
 		]
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.56.0",
+		"typescript": "^4.2.4"
 	}
 }
