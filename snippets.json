@@ -1,0 +1,189 @@
+{
+	// Imports
+	"use Library": {
+		"prefix": [
+			"#use-lib",
+			"use-lib"
+		],
+		"body": [
+			"#use <$1>$0"
+		],
+		"description": "Use a library."
+	},
+	"use File": {
+		"prefix": [
+			"#use-file",
+			"use-file"
+		],
+		"body": [
+			"#use \"$1\"$0"
+		],
+		"description": "Use a file."
+	},
+	// Loops
+	"For Loop": {
+		"prefix": [
+			"for"
+		],
+		"body": [
+			"for ($1; $2; $3) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A for loop."
+	},
+	"While Loop": {
+		"prefix": [
+			"while"
+		],
+		"body": [
+			"while ($1) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A while loop."
+	},
+	"if Statement": {
+		"prefix": [
+			"if"
+		],
+		"body": [
+			"if ($1) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A single if statement."
+	},
+	"if-else Statement": {
+		"prefix": [
+			"if-else"
+		],
+		"body": [
+			"if ($1) {",
+			"\t$0",
+			"}",
+			"else {",
+			"\t",
+			"}"
+		],
+		"description": "A if-else statement."
+	},
+	// Functions
+	"main Function": {
+		"prefix": [
+			"main"
+		],
+		"body": [
+			"int main() {",
+			"\t$0",
+			"",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "A generic main function."
+	},
+	"Generic Function": {
+		"prefix": [
+			"function"
+		],
+		"body": [
+			"${1:int} ${2:function}($3) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A generic function."
+	},
+	// Variables and Arrays
+	"int": {
+		"prefix": [
+			"int"
+		],
+		"body": [
+			"int ${1:n} = ${2:0};$0"
+		],
+		"description": "Integer."
+	},
+	"int Array": {
+		"prefix": [
+			"int-array"
+		],
+		"body": [
+			"int[] ${1:xs} = ${2:alloc_array(int, ${3:0})};$0"
+		],
+		"description": "Integer Array Declaration."
+	},
+	"bool": {
+		"prefix": [
+			"bool"
+		],
+		"body": [
+			"bool ${1:b} = ${2:false};$0"
+		],
+		"description": "Boolean."
+	},
+	"bool Array": {
+		"prefix": [
+			"bool-array"
+		],
+		"body": [
+			"bool[] ${1:bs} = ${2:alloc_array(bool, ${3:0})};$0"
+		],
+		"description": "Boolean Array Declaration."
+	},
+	"string": {
+		"prefix": [
+			"string"
+		],
+		"body": [
+			"string ${1:s} = \"$2\";$0"
+		],
+		"description": "String."
+	},
+	"string Array": {
+		"prefix": [
+			"string-array"
+		],
+		"body": [
+			"string[] ${1:strings} = ${2:alloc_array(string, ${3:0})};$0"
+		],
+		"description": "String Array Declaration."
+	},
+	"char": {
+		"prefix": [
+			"char"
+		],
+		"body": [
+			"char ${1:c} = '$2';$0"
+		],
+		"description": "Char."
+	},
+	"char Array": {
+		"prefix": [
+			"char-array"
+		],
+		"body": [
+			"char[] ${1:chars} = ${2:alloc_array(char, ${3:0})};$0"
+		],
+		"description": "Char Array Declaration."
+	},
+	// requires and ensures
+	"requires Precondition": {
+		"prefix": [
+			"requires",
+		],
+		"body": [
+			"/*@ requires $1; @*/$0"
+		],
+		"description": "requires Precondition."
+	},
+	"ensures Postcondition": {
+		"prefix": [
+			"ensures",
+		],
+		"body": [
+			"/*@ ensures $1; @*/$0"
+		],
+		"description": "ensures Postcondition."
+	},
+
+}

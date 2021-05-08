@@ -1,0 +1,21 @@
+{
+	"name": "c0-snippets",
+	"displayName": "C0 Snippets",
+	"description": "C0 Snippets",
+	"version": "1.0.0",
+	"publisher": "EliasBall",
+	"engines": {
+		"vscode": "^1.55.2"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "c0",
+				"path": "./snippets.json"
+			}
+		]
+	}
+}
