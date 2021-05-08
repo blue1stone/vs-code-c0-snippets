@@ -1,10 +1,12 @@
 {
 	"name": "c0-snippets",
 	"displayName": "C0 Snippets",
-	"description": "C0 Snippets",
-	"version": "1.0.0",
+	"description": "C0 Autocomplete Snippets",
+	"version": "1.0.1",
 	"publisher": "EliasBall",
 	"repository": "https://github.com/blue1stone/vs-code-c0-snippets",
+	"icon": "./icon.png",
+	"galleryBanner.color": "#000000",
 	"engines": {
 		"vscode": "^1.55.2"
 	},
