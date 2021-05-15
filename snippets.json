@@ -166,7 +166,7 @@
 		],
 		"description": "Char Array Declaration."
 	},
-	// requires and ensures
+	// pre and postconditons, invariant
 	"requires Precondition": {
 		"prefix": [
 			"requires",
@@ -184,6 +184,24 @@
 			"/*@ ensures $1; @*/$0"
 		],
 		"description": "ensures Postcondition."
+	},
+	"loop invariant": {
+		"prefix": [
+			"loop_invariant",
+		],
+		"body": [
+			"/*@ loop_invariant $1; @*/$0"
+		],
+		"description": "loop-invariant."
+	},
+	"assert": {
+		"prefix": [
+			"assert",
+		],
+		"body": [
+			"/*@ assert $1; @*/$0"
+		],
+		"description": "assert-check."
 	},
 
 }
